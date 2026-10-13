@@ -1,5 +1,7 @@
 # Issue Tracker API
 
+[![CI](https://github.com/suresh294/Issue-tracker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/suresh294/Issue-tracker/actions/workflows/ci.yml)
+
 A FastAPI and PostgreSQL backend prototype for issue management. It demonstrates CRUD operations, optimistic version checks, comments, labels, bulk status updates, CSV import, and aggregate reports.
 
 > **Deployment status:** A public deployment URL has not been verified. This API is intended for local development and is not production-ready; authentication and authorization are not implemented.
