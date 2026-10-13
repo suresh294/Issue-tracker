@@ -3,7 +3,7 @@ from typing import List, Optional
 
 class IssueCreate(BaseModel):
     title: str
-    assignee_id: int
+    assignee_id: Optional[int] = None
 
 class IssueUpdate(BaseModel):
     title: str
