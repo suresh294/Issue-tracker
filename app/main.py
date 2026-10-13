@@ -120,10 +120,8 @@ def import_csv(file: UploadFile, db: Session = Depends(get_db)):
             assignee_value = row["assignee_id"]
             assignee_id = None if pd.isna(assignee_value) else int(assignee_value)
             db.add(models.Issue(title=title, assignee_id=assignee_id))
-            db.flush()
             success += 1
         except (TypeError, ValueError):
-            db.rollback()
             failed += 1
 
     try:
